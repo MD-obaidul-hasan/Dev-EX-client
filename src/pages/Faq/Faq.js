@@ -3,7 +3,7 @@ import React from 'react';
 const Faq = () => {
     return (
         <div>
-            <div class="grid grid-rows-4 grid-flow-row gap-4">
+            <div class="grid grid-cols-4 grid-flow-cols gap-20">
             <div className=" card w-96 bg-base-100 shadow-xl">
                <figure className="px-10 pt-10">
                     <img src="https://avatars.githubusercontent.com/u/25158?s=280&v=4" alt="Shoes" className="rounded-xl" />
