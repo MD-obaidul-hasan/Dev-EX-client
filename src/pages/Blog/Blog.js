@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div class="grid grid-cols-3 grid-flow-cols gap-20">
+        <div class="grid grid-cols-3 grid-flow-cols gap-10">
             <div className="card w-96 bg-primary text-primary-content">
   <div className="card-body">
     <h2 className="card-title">what is cors?</h2>
