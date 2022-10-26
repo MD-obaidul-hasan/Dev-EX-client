@@ -114,7 +114,7 @@ const Register = () => {
                             <Link to='/login' className="label-text-alt link link-hover">Login now</Link>
                         </label>
                         {
-                            error && <p className='text-red-500'>{error}</p>
+                            error && <p className='text-red-600'>{error}</p>
                         }
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Register</button>
