@@ -1,4 +1,4 @@
-import { GoogleAuthProvider } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -14,7 +14,7 @@ const Login = () => {
     const { providerLogin } = useContext(AuthContext);
 
     const googleProvider = new GoogleAuthProvider();
-
+    const githubProvider = new GithubAuthProvider();
     const handleGoogleSignIn = () => {
         providerLogin(googleProvider)
             .then(result => {
@@ -45,6 +45,16 @@ const Login = () => {
                 setError(error.message);
             })
     };
+
+const handleGithubSignIn = () =>{
+    providerLogin(githubProvider)
+    .then(result => {
+        const user = result.user;
+        console.log(user);
+        navigate(from, { replace: true });
+    })
+    .catch(error => console.error(error))
+}
 
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -92,7 +102,7 @@ const Login = () => {
                     <div className='flex justify-evenly mb-5'>
                         <button onClick={() => handleGoogleSignIn()} className='btn btn-error'>
                             <FaGoogle className='text-2xl'></FaGoogle></button>
-                        <button className='btn btn-info' ><FaGithub className='text-2xl'></FaGithub></button>
+                        <button onClick={() => handleGithubSignIn} className='btn btn-info' ><FaGithub className='text-2xl'></FaGithub></button>
                     </div>
 
                 </div>
