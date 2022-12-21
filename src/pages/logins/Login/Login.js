@@ -46,15 +46,17 @@ const Login = () => {
             })
     };
 
-const handleGithubSignIn = () =>{
-    providerLogin(githubProvider)
-    .then(result => {
-        const user = result.user;
-        console.log(user);
-        navigate(from, { replace: true });
-    })
-    .catch(error => console.error(error))
-}
+// const handleGithubSignIn = () =>{
+//     providerLogin(githubProvider)
+//     .then(result => {
+//         const user = result.user;
+//         useState(user);
+//         console.log(user);
+        
+//         navigate(from, { replace: true });
+//     })
+//     .catch(error => console.error(error))
+// }
 
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -102,7 +104,7 @@ const handleGithubSignIn = () =>{
                     <div className='flex justify-evenly mb-5'>
                         <button onClick={() => handleGoogleSignIn()} className='btn btn-error'>
                             <FaGoogle className='text-2xl'></FaGoogle></button>
-                        <button onClick={() => handleGithubSignIn} className='btn btn-info' ><FaGithub className='text-2xl'></FaGithub></button>
+                        <button  className='btn btn-info' ><FaGithub className='text-2xl'></FaGithub></button>
                     </div>
 
                 </div>

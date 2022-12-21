@@ -23,11 +23,12 @@ const Header = () => {
 
                     </ul>
                 </div>
-                <a href="#" class="flex items-center">
+                <Link to='/' className="btn btn-ghost normal-case text-xl"
+                > <a href="#" class="flex items-center">
         <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-10" alt="Flowbite Logo" />
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Dev-EX</span>
     </a>
-                <Link to='/' className="btn btn-ghost normal-case text-xl"></Link>
+                </Link>
             </div>
 
             <div className="navbar-center hidden lg:flex">
