@@ -48,7 +48,7 @@ const Register = () => {
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Register now!</h1>
+                    <h1 className="text-5xl font-bold text-blue-500">Register now!</h1>
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={onSubmit} className="card-body">
@@ -111,7 +111,7 @@ const Register = () => {
 
                         </div>
                         <label className="label">
-                            <Link to='/login' className="label-text-alt link link-hover">Login now</Link>
+                            <Link to='/login' className="label-text-alt link link-hover btn btn-secondary">Login now</Link>
                         </label>
                         {
                             error && <p className='text-red-600'>{error}</p>

@@ -62,7 +62,7 @@ const Login = () => {
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Login now!</h1>
+                    <h1 className="text-5xl font-bold text-blue-500">Login now!</h1>
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={onSubmit} className="card-body">
@@ -89,7 +89,7 @@ const Login = () => {
                                 className="input input-bordered"
                                 required />
                             <label className="label">
-                                <Link to='/register' className="label-text-alt link link-hover">Register now</Link>
+                                <Link to='/register' className="label-text-alt link link-hover btn btn-secondary">Register now</Link>
                             </label>
                         </div>
                         {
