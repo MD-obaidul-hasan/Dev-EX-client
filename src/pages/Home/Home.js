@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <div>               
-            <h1 className='accent '>welcome to Dev-Ex</h1>
+            <h1 className='accent text-5xl text-pink-400'>  Welcome to Dev-Ex</h1>
             <div className="card lg:card-side bg-base-10 shadow-l">
             
                 <figure><img src="https://w7.pngwing.com/pngs/751/3/png-transparent-logo-php-html-others-text-trademark-logo-thumbnail.png" alt="Album"/></figure>
@@ -14,8 +14,8 @@ const Home = () => {
                 <figure><img src="https://everythingiknows.com/wp-content/uploads/2022/04/node-js-new.png" alt="Album"/></figure>
                 <figure><img src="https://examplecode.org/wp-content/uploads/2022/05/reactjs.png" alt="Album"/></figure>
                 <div className="card-body">
-                    <h2 className="card-title">welcome to Dev-Ex</h2>
-                    <p className='flex '>Dev-Ex give you oppertunity for build carear as a devoloper.
+                    <h1 className="card-title text-3xl text-blue-700">welcome to Dev-Ex</h1>
+                    <p className='flex text-red-700'>Dev-Ex give you oppertunity for build carear as a devoloper.
                                 Here you can chose six devoloping language for build up your carear.
                                 so lets go why so late.
                             </p>

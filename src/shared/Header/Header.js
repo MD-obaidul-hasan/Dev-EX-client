@@ -54,7 +54,7 @@ const Header = () => {
                             <button onClick={() => logOut()} className='btn btn-primary'>Logout</button>
                         </div>
                         :
-                        <Link to='/login' className="btn">Login</Link>
+                        <Link to='/login' className="btn btn-primary">Login</Link>
 
                 }
             </div>
